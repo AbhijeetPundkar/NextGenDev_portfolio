@@ -11,12 +11,12 @@ const NavBar = () => {
         },
         {
             name: "LinkedIn",
-            url: "/linkedin",
+            url: "https://www.linkedin.com/in/abhijeet-pundkar-5a3776232/",
             icon: <FaLinkedin />,
         },
         {
             name: "LeetCode",
-            url: "/leetcode",
+            url: "https://leetcode.com/u/abhij2112/",
             icon: <FaCode />,
         },
     ];
