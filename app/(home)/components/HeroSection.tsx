@@ -20,12 +20,18 @@ const HeroSection = () => {
           front-end design and robust back-end development. Turning ideas into
           functional, user-centric applications.
         </p>
-        <div className="">
+        <div className="flex gap-5">
         <Link
           href={"mailto:abhijeetpundkar02@gmail.com"}
           className=""
         >
           <ContactButton content="Contact Me"/>
+        </Link>
+        <Link
+          href={"https://drive.google.com/file/d/1bXuCKapOE5_GIM12f7oP3WmtPu3fE9ai/view?usp=drive_link"}
+          className=""
+        >
+          <ContactButton content="Resume"/>
         </Link>
         </div>
         
@@ -42,7 +48,7 @@ const HeroSection = () => {
           </div>
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm: left-10">
+        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:left-10">
         <MovingButton borderRadius=".5rem" className="p-3 font-semibold">
           <p> Available for work</p>
         </MovingButton>
