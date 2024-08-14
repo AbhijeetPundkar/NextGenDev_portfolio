@@ -20,12 +20,15 @@ const HeroSection = () => {
           front-end design and robust back-end development. Turning ideas into
           functional, user-centric applications.
         </p>
+        <div className="">
         <Link
           href={"mailto:abhijeetpundkar02@gmail.com"}
-          className="inline-block transform transition-transform duration-300 ease-in-out hover:scale-125"
+          className=""
         >
-          <ContactButton content="Contact Me" />
+          <ContactButton content="Contact Me"/>
         </Link>
+        </div>
+        
       </div>
       <div className="relative">
         <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative">
@@ -39,7 +42,7 @@ const HeroSection = () => {
           </div>
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm: -left-10">
+        <div className="absolute bottom-5 sm:bottom-14 left-0 sm: left-10">
         <MovingButton borderRadius=".5rem" className="p-3 font-semibold">
           <p> Available for work</p>
         </MovingButton>

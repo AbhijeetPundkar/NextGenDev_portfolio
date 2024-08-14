@@ -75,3 +75,47 @@
  
   box-shadow:0 0 200px 130px #c026d3;
 }
+
+@layer components {
+  .title-bottom-line {
+    @apply relative mb-7 inline-block border-b-2 border-dashed border-muted-foreground text-xl font-bold text-foreground no-underline after:absolute after:-bottom-[3px] after:left-0 after:h-1 after:w-0 after:bg-gradient-to-r after:from-indigo-500 after:via-purple-500 after:to-pink-500 after:transition-all after:duration-300 group-hover:after:w-full;
+  }
+
+  .link-hover {
+    @apply relative inline-block no-underline after:absolute after:-bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-indigo-500 after:via-purple-500 after:to-pink-500 after:transition-all after:duration-300 group-hover/card:after:w-full hover:after:w-full;
+  }
+}
+
+.gradient-ring {
+  position: relative;
+}
+
+.gradient-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* Adjust this to match your ring width */
+  border-radius: inherit;
+  background: linear-gradient(to right, #f43f5e, #d946ef, #6366f1);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude; 
+  -webkit-mask-composite: destination-out;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.gradient-ring:hover::before {
+  opacity: 1; /* Visible on hover */
+}
+
+.gradient-ring > * {
+  position: relative;
+  z-index: 2;
+}

@@ -23,7 +23,7 @@ const NavBar = () => {
 
     return (
         <nav className='flex justify-between items-center py-10'>
-            <h1 className='text-white text-4xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:100%_4px] bg-no-repeat bg-bottom transform -rotate-3'>Abhijeet</h1>
+            <h1 className='text-white text-4xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:100%_4px] bg-no-repeat bg-bottom'>Abhijeet</h1>
             <div className="flex justify-center gap-4">
                 {socials.map((social) => (
                     <button
